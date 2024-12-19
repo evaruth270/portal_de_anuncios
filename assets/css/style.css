@@ -1,0 +1,426 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+body {
+    background: linear-gradient(to bottom, #2c003e, #4b0082);
+    color: #f3e5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+/* =========================
+   NAVBAR ESTILIZADO
+========================= */
+
+nav {
+    background: linear-gradient(to right, #6a11cb, #25fcb4);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   BOTONES MEJORADOS
+========================= */
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(to right, #6a11cb, #b37bff);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.btn-danger {
+    background: #e74c3c;
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+
+/* =========================
+   TABLAS ESTILIZADAS
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #f3e5f5;
+}
+
+table th {
+    background: linear-gradient(to right, #6a11cb, #25fc66);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+/* =========================
+   FORMULARIOS
+========================= */
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form button {
+    background: #6a11cb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+form button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: rgba(0, 0, 0, 0.2);
+    color: #f3e5f5;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* =========================
+   NAVBAR MEJORADO
+========================= */
+
+nav {
+    background: linear-gradient(to right, #6a11cb, #25fc6d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   SECCIÓN CONTACTO Y QR
+========================= */
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info {
+    color: #f3e5f5;
+    font-size: 18px;
+    text-align: center;
+}
+
+.qr-container img {
+    max-width: 100px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.qr-container img:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   BOTONES INTERACTIVOS
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(to right, #6a11cb, #b37bff);
+    border-radius: 8px;
+    transition: all 0.3s;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #b37bff, #6a11cb);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn-whatsapp:hover {
+    background: #1EBB60;
+}
+
+
+/* =========================
+   SECCIÓN PRINCIPAL
+========================= */
+
+.welcome-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main-title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.main-description {
+    color: #f3e5f5;
+    font-size: 18px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .qr-container img {
+        margin-top: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* =========================
+   MODAL PARA IMAGEN AMPLIADA
+========================= */
+
+.modal {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    animation: zoomIn 0.5s;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #b37bff;
+}
+
+
+/* Animación de zoom para la imagen */
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* =========================
+   Estilo del Panel de Administración
+========================= */
+
+.admin-panel {
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.admin-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-panel li {
+    margin: 15px 0;
+}
+
+.admin-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(to right, #7b00d8, #b37bff);
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.admin-link i {
+    margin-right: 10px;
+}
+
+.admin-link:hover {
+    background: linear-gradient(to right, #b37bff, #7b00d8);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
